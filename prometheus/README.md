@@ -46,7 +46,11 @@ Best practise separate deployment independent of app.
 
 ### Deploy MongoDB application with deployment and service and then install mongodb exporter using helm
 ```
-helm install [RELEASE_NAME] prometheus-community/prometheus-mongodb-exporter
+helm install [RELEASE_NAME] prometheus-community/prometheus-mongodb-exporter 
+```
+Upgrade the helm Chart with following yaml
+```
+helm upgrade [RELEASE_NAME] prometheus-community/prometheus-mongodb-exporter
 ```
 # values.yaml
 ```
