@@ -20,19 +20,12 @@ This is a Python template to manage PostgreSQL that has good documentation and a
 - It is unclear from documentation how to work with PgBouncer in the right way. But this hardly should be considered a Patroni disadvantage, as its goal is solely to manage PostgreSQL. 
 - It is our job to handle the connections to Patroni in a proper way.
 - There are not many examples of using Patroni in huge environments, while many examples exist that describe deployment from scratch.
-
-
-
-
-
-
-
-
-
-
-
-
+## Postgres Operator
+The Postgres Operator delivers an easy to run highly-available PostgreSQL clusters on Kubernetes (K8s) powered by Patroni. It is configured only through Postgres manifests (CRDs) to ease integration into automated CI/CD pipelines with no access to Kubernetes API directly, promoting infrastructure as code vs manual operations.
 
 ## Reference links
 https://medium.com/@ahmed.eljami/patroni-for-a-high-available-postgresql-cluster-90839c359ff3   
 https://medium.com/miro-engineering/implementing-fault-tolerance-postgresql-cluster-with-patroni-f008471a99b1
+https://blog.searce.com/design-a-highly-available-postgresql-cluster-with-patroni-in-gcp-part-2-9df6ab4de741h
+
+https://github.com/zalando/postgres-operator
